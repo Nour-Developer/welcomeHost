@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: full-laravel-demo
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: PORT
+        value: 8000
